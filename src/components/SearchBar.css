@@ -1,0 +1,23 @@
+.search-bar {
+    display: flex;
+    margin: 80px 2rem 1rem; /* Add top margin to clear the fixed navbar */
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    padding: 1rem 2rem;
+    background-color: #ff385c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  

@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "image": "https://example.com/image1.jpg",
+      "title": "Cozy Cottage",
+      "type": "Entire home",
+      "guests": 4,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "price": 120,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "image": "https://example.com/image2.jpg",
+      "title": "Modern Apartment",
+      "type": "Private room",
+      "guests": 2,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "price": 80,
+      "rating": 4.7
+    }
+  ]
+  
