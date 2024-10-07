@@ -1,18 +1,13 @@
 import React from 'react';
 import './ListingCard.css';
 
-const ListingCard = ({ property }) => {
+const ListingCard = ({ title, price, imageUrl }) => {
   return (
     <div className="listing-card">
-      <img src={property.image} alt={property.title} className="listing-image" />
+      <img src={imageUrl} alt={title} />
       <div className="listing-info">
-        <h2 className="listing-title">{property.title}</h2>
-        <p className="listing-type">{property.type}</p>
-        <p className="listing-details">
-          {property.guests} guests · {property.bedrooms} bedrooms · {property.bathrooms} bathrooms
-        </p>
-        <p className="listing-price">{property.price} per night</p>
-        <p className="listing-rating">⭐ {property.rating}</p>
+        <h3>{title}</h3>
+        <p>{price}</p>
       </div>
     </div>
   );

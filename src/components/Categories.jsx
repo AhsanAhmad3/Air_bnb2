@@ -1,21 +1,15 @@
 import React from 'react';
 import './Categories.css';
 
-const categories = [
-  'Beachfront',
-  'Cabins',
-  'Trending',
-  'Unique stays',
-  'Experiences',
-];
-
 const Categories = () => {
+  const categories = ['Beachfront', 'Cabins', 'Tiny Homes', 'Unique Stays', 'Farms'];
+
   return (
     <div className="categories">
-      {categories.map((category) => (
-        <button key={category} className="category-button">
+      {categories.map((category, index) => (
+        <div className="category" key={index}>
           {category}
-        </button>
+        </div>
       ))}
     </div>
   );

@@ -4,43 +4,28 @@ import SearchBar from '../components/SearchBar';
 import Categories from '../components/Categories';
 import ListingCard from '../components/ListingCard';
 import Footer from '../components/Footer';
-import './HomePage.css'; // Import styles for the homepage
+import './HomePage.css';
 
 const HomePage = () => {
-  const mockProperties = [
-    {
-      id: 1,
-      title: 'Beautiful Beach House',
-      type: 'Entire home',
-      guests: 6,
-      bedrooms: 3,
-      bathrooms: 2,
-      price: '$200',
-      rating: 4.9,
-      image: 'https://via.placeholder.com/300x200?text=Beach+House', // Replace with real image URLs
-    },
-    {
-      id: 2,
-      title: 'Cozy Cabin in the Woods',
-      type: 'Private room',
-      guests: 2,
-      bedrooms: 1,
-      bathrooms: 1,
-      price: '$100',
-      rating: 4.5,
-      image: 'https://via.placeholder.com/300x200?text=Cozy+Cabin', // Replace with real image URLs
-    },
-    // Add more properties as needed
+  const listings = [
+    { title: 'Modern Beach House', price: '$400/night', imageUrl: 'beach-house.jpg' },
+    { title: 'Cozy Cabin', price: '$300/night', imageUrl: 'cabin.jpg' },
+    { title: 'Urban Apartment', price: '$150/night', imageUrl: 'apartment.jpg' }
   ];
 
   return (
-    <div>
+    <div className="homepage">
       <Navbar />
       <SearchBar />
       <Categories />
       <div className="listings">
-        {mockProperties.map((property) => (
-          <ListingCard key={property.id} property={property} />
+        {listings.map((listing, index) => (
+          <ListingCard
+            key={index}
+            title={listing.title}
+            price={listing.price}
+            imageUrl={listing.imageUrl}
+          />
         ))}
       </div>
       <Footer />

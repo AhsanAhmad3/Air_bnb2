@@ -2,46 +2,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+    padding: 20px;
+    background-color: white;
   }
   
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
+  .navbar-logo img {
+    height: 40px;
   }
   
-  .nav-links {
-    list-style-type: none;
+  .navbar-links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
   }
   
-  .user-menu {
-    display: flex;
-  }
-  
-  .login-button,
-  .signup-button {
-    padding: 10px 15px;
-    margin-left: 10px;
-    border: none;
-    border-radius: 20px;
+  .navbar-links li {
+    list-style: none;
+    font-size: 16px;
     cursor: pointer;
   }
   
-  .login-button {
-    background-color: #fff;
-    color: #ff385c;
-    border: 1px solid #ff385c;
-  }
-  
-  .signup-button {
-    background-color: #ff385c;
-    color: white;
+  .navbar-profile {
+    font-size: 24px;
+    cursor: pointer;
   }
   

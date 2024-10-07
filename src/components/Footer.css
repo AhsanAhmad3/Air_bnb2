@@ -1,18 +1,22 @@
 .footer {
-    padding: 2rem 0;
-    background-color: #f8f8f8;
     text-align: center;
-    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .footer p {
+    font-size: 14px;
   }
   
   .footer-links {
-    margin-bottom: 1rem;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
   }
   
-  .footer-links a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #555;
+  .footer-links li {
+    list-style: none;
     font-size: 14px;
+    cursor: pointer;
   }
   

@@ -4,15 +4,16 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">Airbnb Clone</div>
-      <ul className="nav-links">
-        <li>Home</li>
+      <div className="navbar-logo">
+        <img src="logo.svg" alt="Airbnb Logo" />
+      </div>
+      <ul className="navbar-links">
+        <li>Places to stay</li>
         <li>Experiences</li>
         <li>Online Experiences</li>
       </ul>
-      <div className="user-menu">
-        <button className="login-button">Login</button>
-        <button className="signup-button">Signup</button>
+      <div className="navbar-profile">
+        <i className="fa fa-user"></i>
       </div>
     </nav>
   );
